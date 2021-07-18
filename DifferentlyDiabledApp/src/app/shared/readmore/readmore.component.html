@@ -1,0 +1,10 @@
+<div>
+    <!-- <img src="../../shared/../../assets/image" class="card-img-top" alt="..."> -->
+    <h5 class="card-title"  [ngClass]="eventCliked? 'text-color': ''"> {{sport.title}} </h5>
+    {{(readMore) ? sport.description : sport.description | slice:0:50}} 
+    <span *ngIf="!readMore">...</span>
+    <a href="javascript:;" *ngIf="!readMore" (click)="readMore=true">[Read More]</a>
+    <button (click)="clickSport(sport)" class="btn btn-primary" >Go To Wiki page</button>
+</div>
+
+

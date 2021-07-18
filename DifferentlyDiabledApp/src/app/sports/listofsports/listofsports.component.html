@@ -1,0 +1,8 @@
+<div class="grid-container">
+    <div class="pad-16" *ngFor="let item of listOfSports">
+        <div class="eachItem">
+            <app-contentcard [sportData]="item" (emitSport)="eventClicked($event)"></app-contentcard>
+            <!-- <app-contentcard (display)="dispplayfunc(sport)" ></app-contentcard> -->
+        </div>
+    </div>
+</div>

@@ -1,12 +1,8 @@
 <app-header></app-header>
-<div>
-    <div class="card" style="width: 18rem;">
-      <div> </div>
-        <div class="card-body">
-          <h5 class="card-title">{{title}}</h5>
-          <p class="card-text">{{description}}</p>
-          <button href="#" class="btn btn-primary" [disabled]="buttonState">Go somewhere</button>
-        </div>
-      </div>
-</div>
+<!-- property binding passing the data to input decorator in the child. -->
+<!-- <div>You have clicked {{ sportData.title }}</div> -->
+<!-- <app-signup *ngIf="isSignedUpClicked"></app-signup> -->
+<!-- <app-listofsports *ngIf="isSignedUpClicked"></app-listofsports> -->
+<router-outlet></router-outlet>
 <app-footer></app-footer>
+<!-- Binding the output emitted from child to the parent component. -->
