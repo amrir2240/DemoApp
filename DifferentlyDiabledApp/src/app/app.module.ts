@@ -9,6 +9,9 @@ import { SignupComponent } from './shared/signup/signup.component';
 import { ListofsportsComponent } from './sports/listofsports/listofsports.component';
 import { UpcomingMatchesComponent } from './sports/upcoming-matches/upcoming-matches.component';
 import { NewsComponent } from './sports/news/news.component';
+import { WatchComponent } from './sports/watch/watch.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +24,13 @@ import { NewsComponent } from './sports/news/news.component';
         { path: '', component: SignupComponent},
         { path: 'listOfSports', component: ListofsportsComponent},
         { path: 'upcomingMatches', component: UpcomingMatchesComponent},
-        { path: 'news', component: NewsComponent}
+        { path: 'news', component: NewsComponent},
+        { path: 'watch', component: WatchComponent}
     ]),
     BrowserModule,
     SharedModule, 
-    ReadMoreModule
+    ReadMoreModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [MainComponent]

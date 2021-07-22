@@ -28,4 +28,8 @@ export class HeaderComponent implements OnInit {
   {
     this.router.navigate(['/news']);
   }
+  navigateToWatch()
+  {
+    this.router.navigate(['/watch']);
+  }
 }
